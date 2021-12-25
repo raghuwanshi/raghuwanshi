@@ -1,0 +1,18 @@
+# Disable the default mapping for running git-gc
+bind generic G none
+bind generic <Esc> view-close-no-quit
+
+#bind diff <Up> move-up
+#bind diff <Down> move-down
+
+
+set line-graphics = utf-8
+set main-view-author-display = email-user
+set main-view-date-display = relative-compact
+set main-view-id-display = yes
+set main-view-commit-title-overflow = 50
+
+
+
+
+
