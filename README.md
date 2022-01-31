@@ -1,8 +1,18 @@
-- 👋 Hi, I’m @raghuwanshi
-- 👀 I’m interested in anything which I feel important but no one else is working on.
+[![Banner](./banner.jpg)](https://github.com/raghuwanshi "A race for information")
+
+![Visitors](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=raghuwanshi)
+
+🧬 About Me
+--------
+
+- 🧠 Multiparadigm software development expert. [C++, C#, JS, Go]
+- 💭 I’m interested in learning new ways to make things better, specially optimize and simplify them.
 - 🌱 I’m currently learning Go programing language. But my learning style is a spiral, so many things (Ex. New versions or C++ or C#) keep revolving around.
 
-If you are not reading this on my profile but in the repository, then this is my home repository having a backup of my common settings and scripts that I use with Git command prompt or otherwise. 
+📦 [This Repository](https://github.com/raghuwanshi/raghuwanshi "contains this README.md file.")
+---------------
 
-✨ You may use them with little modification ✨.
+If you are not reading this on my profile but in [the repository](https://github.com/raghuwanshi/raghuwanshi), then this is my home repository having a backup of my common settings and scripts that I use with Git command prompt or otherwise. 
+
+✨ You may use them with little customization. ✨
 
