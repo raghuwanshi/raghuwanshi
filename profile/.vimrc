@@ -19,6 +19,9 @@ endif
 " For further information search for 'Xterm Control Sequences'
 autocmd VimLeave * set t_ti=
 
+" Text wrap for git commit message.
+autocmd FileType gitcommit set textwidth=65
+
 " Following works best on Windows terminal.
 set term=xterm-256color
 

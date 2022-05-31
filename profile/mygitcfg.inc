@@ -9,6 +9,11 @@
 
 ######################################################################
 
+# Although VIM is default fallback I'd love to assert it as my
+# preffered one.
+[core]
+	editor = vim
+
 # By default fetch submodules when you fetch/pull normally.
 [fetch]
 	recurseSubmodules = true

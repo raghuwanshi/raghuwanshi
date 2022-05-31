@@ -3,18 +3,28 @@
 ##################
 # Instead of -l putting -g will hide user name because group info is not there on windows.
 alias ll='ls -g -A -h'
+
 alias gt='git log --oneline --decorate --graph --exclude=refs/stash'
-alias gta='git log --oneline --decorate --graph --exclude=refs/stash --all'
-alias gl='git log --format="%C(auto)%h%x09%s"'
+alias gta='gt --all'
+alias gt10='gt -10'
+#alias gl='git log --format="%C(auto)%h%x09%s"'
+# Above should use TAB as seperator but terminals replace that with spaces.
+alias gl='git log --format="%C(auto)%h: %s"'
+alias gl10='gl -10'
 alias glog='git log --stat --show-signature'
+alias glog1='glog -1'
+
 alias gs='git status --short --branch'
 alias gst='git status --column=always --show-stash'
+
+alias gau='git add --update'
 alias gc='git commit --gpg-sign'
 alias gpre='git pull --rebase --gpg-sign'
 alias gclone='git clone --recurse-submodules'
 alias smu='git submodule update --init --recursive'
-alias gau='git add --update'
+alias gpush='git push --follow-tags --recurse-submodules=on-demand'
 
+alias gmvbranch='git branch --force' # <branch name> <commit to move to>
 alias ignore-ls='git ls-files -v | grep '^[[:lower:]]' | cut -d" " -f2'
 alias ignore-set='git update-index --assume-unchanged'
 alias ignore-not='git update-index --no-assume-unchanged'
