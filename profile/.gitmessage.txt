@@ -1,4 +1,4 @@
 
-#---Your summary should be only this much long---|
+# <Bug/Feature ID>: Summary, within this limit---|
 #
 # Then leave one blank line and write any details.

@@ -30,6 +30,7 @@
 # Commit message will be pre-populated with text from this file.
 [commit]
 	template = ~/.gitmessage.txt
+	gpgSign = true	# Use only if gpg is configured for signing.
 
 # Always sign a tag.
 [tag]

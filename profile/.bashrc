@@ -7,10 +7,13 @@ alias ll='ls -g -A -h'
 alias gt='git log --oneline --decorate --graph --exclude=refs/stash'
 alias gta='gt --all'
 alias gt10='gt -10'
+alias gta10='gta -10'
 #alias gl='git log --format="%C(auto)%h%x09%s"'
 # Above should use TAB as seperator but terminals replace that with spaces.
-alias gl='git log --format="%C(auto)%h: %s"'
+alias gl='git log --format="%C(auto)%h:%d %s" --decorate-refs=refs/tags/'
 alias gl10='gl -10'
+alias gsl='git shortlog --group=trailer:Commit-Type'
+#git shortlog $(git describe | cut -d'-' -f1)..HEAD
 alias glog='git log --stat --show-signature'
 alias glog1='glog -1'
 
@@ -19,12 +22,19 @@ alias gst='git status --column=always --show-stash'
 
 alias gau='git add --update'
 alias gc='git commit --gpg-sign'
+alias gcam='gc --amend' # git commit amend with updated message.
+alias gca='gcam --no-edit' # git commit amend with old message.
+alias gcb='gc --trailer=Commit-Type:Bugfix' # git commit for a bugfix.
+alias gcf='gc --trailer=Commit-Type:Feature' # git commit for a Feature.
 alias gpre='git pull --rebase --gpg-sign'
 alias gclone='git clone --recurse-submodules'
 alias smu='git submodule update --init --recursive'
+alias smur='smu --remote'
 alias gpush='git push --follow-tags --recurse-submodules=on-demand'
 
-alias gmvbranch='git branch --force' # <branch name> <commit to move to>
+alias gclean='git clean -i'
+
+alias gmvbr='git branch --force' # Git-Move-Branch <branch> <commit>
 alias ignore-ls='git ls-files -v | grep '^[[:lower:]]' | cut -d" " -f2'
 alias ignore-set='git update-index --assume-unchanged'
 alias ignore-not='git update-index --no-assume-unchanged'
@@ -32,12 +42,15 @@ alias ignore-not='git update-index --no-assume-unchanged'
 ##################
 ## Git Flags    ##
 ##################
-export set GIT_PS1_SHOWCOLORHINTS="true"
+export set GIT_PS1_SHOWCOLORHINTS=""
+export set GIT_PS1_HIDE_IF_PWD_IGNORED="true"
 export set GIT_PS1_SHOWUNTRACKEDFILES="true"
 export set GIT_PS1_SHOWDIRTYSTATE="true"
-export set GIT_PS1_DESCRIBE_STYLE="branch"
+export set GIT_PS1_SHOWCONFLICTSTATE="yes"
+
 export set GIT_PS1_STATESEPARATOR=""
-export set GIT_PS1_SHOWUPSTREAM="verbose name"
+export set GIT_PS1_DESCRIBE_STYLE="branch"
+export set GIT_PS1_SHOWUPSTREAM="verbose name git"
 
 ##################
 ## Git Prompt   ##
