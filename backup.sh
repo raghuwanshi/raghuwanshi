@@ -21,7 +21,7 @@ fi
 
 if [ $restore ]; then
 	echo Restoring to $srcFolder
-	cp $dstFolder/* $srcFolder/
+	cp -r $dstFolder/. $srcFolder/
 else
 	for f in $(ls -A $dstFolder); do # List files under profile folder.
 		if [ -f $dstFolder/$f ]; then # Not a folder. Subfolders will not be backed up.
