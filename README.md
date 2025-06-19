@@ -7,7 +7,7 @@
 
 - 🧠 Multiparadigm software development expert. [C++, C#, JS, Go]
 - 💭 I’m interested in learning new ways to make things better, specially optimize and simplify them.
-- 🌱 I’m currently learning Go programming language. But my learning style is a spiral, so many things (Ex. New versions or C++ or C#) keep revolving around.
+- 🌱 My learning style is a spiral, so many things (Ex. New versions or C++, Go or C# etc.) keep revolving around.
 
 📦 [This Repository](https://github.com/raghuwanshi/raghuwanshi "contains this README.md file.")
 ---------------------
